@@ -1,4 +1,4 @@
-package com.phunware.android.phunwareproducthomework.zipcodelist
+package com.phunware.android.phunwareproducthomework.features.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import com.phunware.android.phunwareproducthomework.WeatherApp
 import com.phunware.android.phunwareproducthomework.storage.ZipCodeStore
 import javax.inject.Inject
 
-class ZipCodeListViewModel: ViewModel() {
+class ZipCodeListViewModel : ViewModel() {
 
     @Inject
     lateinit var zipCodeStore: ZipCodeStore
@@ -21,15 +21,14 @@ class ZipCodeListViewModel: ViewModel() {
     fun getZipCodes(): LiveData<List<String>> {
         if (zipCodes == null) {
             zipCodes = MutableLiveData()
-            loadZipCodes()
         }
+
+        loadZipCodes()
+
         return zipCodes!!
     }
 
     private fun loadZipCodes() {
-        if (zipCodes == null) {
-            zipCodes = MutableLiveData()
-        }
         zipCodes!!.value = zipCodeStore.getZipCodes()
     }
 }

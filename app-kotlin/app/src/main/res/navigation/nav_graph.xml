@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/addZipCodeFragment"
-        android:name="com.phunware.android.phunwareproducthomework.addzipcode.fragment.AddZipCodeFragment"
-        android:label="AddZipCodeFragment">
+        android:name="com.phunware.android.phunwareproducthomework.features.add.fragment.AddZipCodeFragment"
+        android:label="Add New Zip Code">
         <argument android:name="zipCode"/>
     </fragment>
     <fragment
         android:id="@+id/zipCodeListFragment"
-        android:name="com.phunware.android.phunwareproducthomework.zipcodelist.fragment.ZipCodeListFragment"
-        android:label="fragment_zip_code_list"
+        android:name="com.phunware.android.phunwareproducthomework.features.list.fragment.ZipCodeListFragment"
+        android:label="Phunware Homework Assignment"
         tools:layout="@layout/fragment_zip_code_list">
         <action
             android:id="@+id/addZipCode"
@@ -27,8 +27,8 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.phunware.android.phunwareproducthomework.detail.fragment.DetailFragment"
-        android:label="fragment_detail"
+        android:name="com.phunware.android.phunwareproducthomework.features.detail.fragment.DetailFragment"
+        android:label="Detail"
         tools:layout="@layout/fragment_detail">
 
         <argument android:name="zipCode"/>

@@ -8,7 +8,7 @@ class InMemoryZipCodeStore : ZipCodeStore {
      */
     override fun getZipCodes(): List<String> = _zipCodes.toList()
 
-    override fun addZipCode(zipcode: String) {
-        _zipCodes.add(zipcode)
+    override fun addZipCode(zipCode: String) {
+        _zipCodes.add(zipCode)
     }
 }

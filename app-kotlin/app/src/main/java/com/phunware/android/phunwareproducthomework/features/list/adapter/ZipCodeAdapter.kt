@@ -1,4 +1,4 @@
-package com.phunware.android.phunwareproducthomework.zipcodelist.adapter
+package com.phunware.android.phunwareproducthomework.features.list.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.phunware.android.phunwareproducthomework.R
-import com.phunware.android.phunwareproducthomework.zipcodelist.fragment.ZipCodeListFragmentDirections
+import com.phunware.android.phunwareproducthomework.features.list.fragment.ZipCodeListFragmentDirections
 import kotlinx.android.synthetic.main.item_zipcode.view.*
 
 class ZipCodeAdapter(var items: List<String>?) : RecyclerView.Adapter<ViewHolder>() {

@@ -17,7 +17,7 @@ class WeatherApp : Application() {
     }
 
     @Inject
-     lateinit var zipCodeStore: ZipCodeStore
+    lateinit var zipCodeStore: ZipCodeStore
 
     override fun onCreate() {
         super.onCreate()
@@ -28,6 +28,5 @@ class WeatherApp : Application() {
         zipCodeStore.addZipCode("92029")
         zipCodeStore.addZipCode("92128")
         zipCodeStore.addZipCode("03872")
-
     }
 }
